@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-content">
+        <div class="card-title">
+            <form class="col s6" (ngSubmit)="onSubmit()" method="post">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input type="text" name="title" [(ngModel)]="item.title" value="">
+                        <label for="title">Title</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" name="description" [(ngModel)]="item.description" value="">
+                        <label for="description">Description</label>
+                    </div>
+                    <input type="submit" value="Submit" class="btn">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
